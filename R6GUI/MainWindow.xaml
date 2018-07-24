@@ -1,0 +1,62 @@
+﻿<Window x:Class="R6GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R6GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" WindowStyle="None"  ResizeMode="NoResize">
+
+
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+
+
+        <Image Grid.ColumnSpan="11" Grid.RowSpan="100"  Source="R6_chimera.bmp" Stretch="Fill"/>
+        <TextBlock Grid.Column="4" Grid.ColumnSpan="35"  Grid.Row="15" Text="Please select your region..." VerticalAlignment="Bottom" FontWeight="Bold" Margin="0 0 0 3"/>
+        <Button Content="EMEA" x:Name="setEmea" Grid.Column="4" Grid.Row="16" HorizontalAlignment="Left" Click="EmeaButton_Click" Opacity="0.5" />
+        <Button Content="APAC" x:Name="setApac" Grid.Column="5" Grid.Row="16" HorizontalAlignment="Center" Click="ApacButton_Click" Opacity="0.5"/>
+        <Button Content="NCSA" x:Name="setNcsa" Grid.Column="6" Grid.Row="16" HorizontalAlignment="Right" Click="NcsaButton_Click" Opacity="0.5"/>
+
+
+    </Grid>
+</Window>

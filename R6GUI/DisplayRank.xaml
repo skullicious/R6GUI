@@ -1,0 +1,25 @@
+﻿<Window x:Class="R6GUI.DisplayRank"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R6GUI"
+        mc:Ignorable="d"
+        
+        Title="DisplayRank" Height="410" Width="314" WindowStyle="None"  ResizeMode="NoResize" AllowsTransparency="True" Opacity="0.8">
+    
+    <Image Margin="0,0,0,0" Source="images/gold3.png" Stretch="Fill"/>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</Window>

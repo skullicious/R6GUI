@@ -1,0 +1,67 @@
+﻿<Window x:Class="R6GUI.PickPlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R6GUI"
+        mc:Ignorable="d"
+        Title="PickPlayer" Height="350" Width="525" WindowStyle="None"  ResizeMode="NoResize">
+
+
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+
+        <Image Grid.ColumnSpan="11" Grid.RowSpan="100"  Source="R6_chimera.bmp" Stretch="Fill"/>
+        <TextBlock Grid.Column="3" Grid.ColumnSpan="35"  Grid.Row="15" Text="Please select your uPlay account from below..." VerticalAlignment="Bottom" FontWeight="Bold" Margin="0 0 0 0"/>
+
+        <ComboBox x:Name="myComboBox" Grid.Column="4" Grid.Row="16" HorizontalAlignment="Left" VerticalAlignment="Center" Width="160" Grid.ColumnSpan="4">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>              
+            </ComboBox.ItemTemplate>                       
+        </ComboBox>
+        <Button Content="Pick!" x:Name="PickButton" Click="PickButton_Click"  Grid.Column="7" Grid.Row="16" HorizontalAlignment="Right"  VerticalAlignment="Center" Width="34" Height="23" Padding="2 2 2 2"/>
+
+
+     </Grid>
+</Window>
